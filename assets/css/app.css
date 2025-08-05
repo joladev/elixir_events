@@ -1,0 +1,17 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* This file is for your main application CSS */
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.description p {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: rgb(255, 203, 107);
+  text-align: justify;
+}

@@ -1,0 +1,6 @@
+#!/bin/sh
+set -eu
+
+cd -P -- "$(dirname -- "$0")"
+./elixir_events eval ElixirEvents.Release.migrate
+PHX_SERVER=true exec ./elixir_events start

@@ -1,0 +1,15 @@
+<div class="flex flex-col w-full mx-auto place-items-center">
+  <.flash_group flash={@flash} />
+  <.link href={~p"/"} class="mt-4 mb-8">
+    <h1 class="text-highlight lobster-regular text-6xl md:text-8xl text-center">
+      ElixirEvents
+    </h1>
+  </.link>
+  {@inner_content}
+  <div class="md:py-12 py-6 flex flex-row place-content-center">
+    <p class="text-orangey">
+      Made with ❤️ by
+      <.link class="text-highlight lobster-regular" href="https://jola.dev">jola.dev</.link>
+    </p>
+  </div>
+</div>

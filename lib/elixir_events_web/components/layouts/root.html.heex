@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" class="[scrollbar-gutter:stable]">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="csrf-token" content={get_csrf_token()} />
+    <meta
+      name="description"
+      content="ElixirEvents gathers all Elixir and Erlang related events, like conferences and meetups, in a single place. The goal is to make all events more discoverable and to help grow the community. Find and contribute new events!"
+    />
+    <meta property="og:title" name="og:title" content={ElixirEventsWeb.page_title(@conn.assigns)} />
+    <meta property="og:url" name="og:url" content={Phoenix.Controller.current_url(@conn)} />
+    <meta
+      property="og:description"
+      name="og:description"
+      content="ElixirEvents gathers all Elixir and Erlang related events, like conferences and meetups, in a single place. The goal is to make all events more discoverable and to help grow the community. Find and contribute new events!"
+    />
+    <meta property="og:type" name="og:type" content="website" />
+    <meta
+      property="og:image"
+      name="og:image"
+      content="https://elixirevents.net/images/preview.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ElixirEvents" />
+    <meta name="twitter:description" content="The Elixir event calendar" />
+    <meta name="twitter:image" content="https://elixirevents.net/images/preview.png" />
+    <.live_title>
+      {@conn.assigns[:page_title]}
+    </.live_title>
+    <link phx-track-static rel="stylesheet" href={~p"/assets/app.css"} />
+    <script defer phx-track-static type="text/javascript" src={~p"/assets/app.js"}>
+    </script>
+    <script
+      defer
+      src="https://umami.devstats.io/script.js"
+      data-website-id="9587e81e-b7b9-40aa-9d54-2f7d3b4625a1"
+    >
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="RSS feed for elixirevents.net"
+      href="/rss"
+    />
+  </head>
+  <body class="bg-brand">
+    {@inner_content}
+  </body>
+</html>
