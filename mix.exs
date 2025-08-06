@@ -33,13 +33,13 @@ defmodule ElixirEvents.MixProject do
   defp deps do
     [
       {:bcrypt_elixir, "~> 3.0"},
-      {:phoenix, "~> 1.7.14"},
+      {:phoenix, "~> 1.8"},
       {:phoenix_ecto, "~> 4.5"},
       {:ecto_sql, "~> 3.10"},
       {:postgrex, ">= 0.0.0"},
       {:phoenix_html, "~> 4.1"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
-      {:phoenix_live_view, "~> 1.1.0", override: true},
+      {:phoenix_live_view, "~> 1.1"},
       {:lazy_html, ">= 0.0.0", only: :test},
       {:phoenix_live_dashboard, "~> 0.8.3"},
       {:ecto_psql_extras, "~> 0.6"},
@@ -73,7 +73,7 @@ defmodule ElixirEvents.MixProject do
       {:hammer, "~> 7.0"},
       {:mimic, "~> 2.0", only: :test},
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
-      {:tidewave, "~> 0.2", only: :dev}
+      {:tidewave, "~> 0.3", only: :dev}
     ]
   end
 
