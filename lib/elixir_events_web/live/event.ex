@@ -55,7 +55,7 @@ defmodule ElixirEventsWeb.Live.Event do
         </div>
         <%= if @event.description do %>
           <div class="flex flex-col place-content-center text-orangey py-2 px-8 text-justify description">
-            {raw(MDEx.to_html!(@event.description, sanitize: MDEx.default_sanitize_options()))}
+            {raw(MDEx.to_html!(@event.description, sanitize: MDEx.Document.default_sanitize_options()))}
           </div>
         <% end %>
         <div class="flex flex-row place-content-between mt-4">
