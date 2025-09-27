@@ -52,7 +52,7 @@ defmodule ElixirEventsWeb.Live.Admin do
         <div class="bg-white">
           {raw(
             MDEx.to_html!(ElixirEvents.Bluesky.text(@event),
-              sanitize: MDEx.default_sanitize_options()
+              sanitize: MDEx.Document.default_sanitize_options()
             )
           )}
         </div>
