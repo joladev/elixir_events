@@ -69,7 +69,7 @@ defmodule ElixirEvents.MixProject do
       {:slugify, "~> 1.3"},
       {:fun_with_flags, "~> 1.13.0"},
       {:fun_with_flags_ui, "~> 1.0"},
-      {:mdex, "~> 0.10.0"},
+      {:mdex, "~> 0.11.0"},
       {:hammer, "~> 7.0"},
       {:mimic, "~> 2.0", only: :test},
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
