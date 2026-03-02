@@ -62,7 +62,7 @@ defmodule ElixirEvents.MixProject do
       {:bandit, "~> 1.5"},
       {:tz, "~> 0.28.1"},
       {:tz_extra, "~> 0.45"},
-      {:sentry, "~> 11.0.1"},
+      {:sentry, "~> 12.0.1"},
       {:hackney, "~> 1.8"},
       {:ex_hash_ring, "~> 7.0"},
       {:req, "~> 0.5.7"},
