@@ -65,7 +65,7 @@ defmodule ElixirEvents.MixProject do
       {:sentry, "~> 13.1.0"},
       {:hackney, "~> 1.8"},
       {:ex_hash_ring, "~> 7.0"},
-      {:req, "~> 0.5.7"},
+      {:req, "~> 0.6.1"},
       {:slugify, "~> 1.3"},
       {:fun_with_flags, "~> 1.13.0"},
       {:fun_with_flags_ui, "~> 1.0"},
